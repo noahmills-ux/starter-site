@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Downtown</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    
+        <style>
+            * {
+                box-sizing:border-box;
+            }
+            body {
+                margin:0;
+                padding:0;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "header nav nav" 
+                    "footer footer footer";
+            }
+            
+            .container2 {
+                display:grid;
+                grid-template-columns: 2fr 2fr;
+                grid-template-areas: 
+                    "downtown downtown"
+                    "section1 section2"
+                    "section1-1 section2-2"
+                    "information information";
+            }
+            
+             header {
+                grid-area: header;
+            }
+            
+            nav {
+                grid-area: nav;
+            }
+            
+            .titlesection {
+                grid-area: section;
+            }
+            
+            footer {
+                grid-area: footer; 
+            }
+            
+            .downtown {
+                grid-area: downtown;
+                background-position: center;
+                background-size: cover;
+                display:grid;
+                justify-items:center;
+                align-items:center;
+                position:relative;
+                background: #333;
+            }
+            
+            .downtown-backbox {
+                color: #fff;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 65px;
+                align-items: center;
+                justify-items:center;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                font-weight: normal;
+                text-decoration:none;
+                font-style:normal;
+                font-variant: normal;
+                text-transform:uppercase;
+                padding-right: 40px;
+                padding-left: 40px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 30px;
+                margin-top: 50px;
+                border:5px solid #fff;
+            }
+            
+            .section1 {
+                grid-area: section1;
+            }
+            
+            .section2 {
+                grid-area: section2;
+            }
+            
+            .section1-1 {
+                grid-area: section1-1;
+            }
+            
+            .section2-2 {
+                grid-area: section2-2;
+            }
+            
+            .information {
+                grid-area: information;
+                background-color: #333;
+                color: #fff;
+                align-items: center;
+                justify-items:center;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                font-weight: normal;
+                text-decoration:none;
+                font-style:normal;
+                font-variant: normal;
+                padding: 20px;
+                text-align:inherit;
+            }
+            
+            .infotext {
+                padding-left: 300px;
+                padding-right: 300px;
+                font-size: 25px;
+                font-weight: lighter; 
+            }
+            
+            .smallimg {
+                max-width: 90%;
+                height: auto;
+            }
+            
+            .section1 {
+                background-color: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff;
+            }
+
+            .section2 {
+                background: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff
+            }
+
+            .section1-1 {
+                background-color: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff;
+            }
+
+            .section2-2 {
+                background: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff
+            }
+            
+        </style>
+    </head>
+<body>
+   <div class="container">
+        <header>
+        <img class="logo" src="images/harrisonburg-logo.png" width="350" height="50" alt="harrisonburg logo">
+        </header>
+
+        <nav>
+            <div><a href="index.html"><h2 class="nav-backbox">Home</h2></a></div>
+            <div><a href="downtown.html"><h2 class="nav-backbox">Downtown</h2></a></div>
+            <div><a href="jmu.html"><h2 class="nav-backbox">JMU</h2></a></div>
+            <div><a href="links.html"><h2 class="nav-backbox">Links</h2></a></div>
+            <div><a href="photos.html"><h2 class="nav-backbox">Photos</h2></a></div>
+        </nav>
+       
+    </div>
+
+    <div class="container2">
+        <div class="downtown">
+            <h1 class="downtown-backbox">DOWNTOWN</h1>
+        </div>
+        
+        <div class="section1">
+            <img class="smallimg" src="images/s-main-st.jpg" alt="Main Street Sign">
+            <div><p>Main St. Sign</p></div></div>
+        
+        <div class="section2">
+            <img class="smallimg" src="images/side-road2.jpg" alt="Downtown Side Road">
+            <div><p>Side Road Along Main St.</p></div>
+        </div>
+        
+        <div class="section1-1">
+            <img class="smallimg" src="images/agora.jpg" alt="Agora Downtown Marketplace">
+            <div><p>Downtown Market</p></div></div>
+        
+        <div class="section2-2">
+            <img class="smallimg" src="images/museum.jpg" alt="iExplore Museum">
+            <div><p>Downtown Museum</p></div>
+        </div>
+        
+        <div class="information">
+            <p class="infotext">Harrisonburg is known for its vibrant downtown; the first designated Arts & Cultural District and the first Culinary District in Virginia.  </p>
+            
+            <p class="infotext">Downtown Harrisonburg is a unique area full of shops, attractions, and diverse architecture. The Downtown food is very popular among local redisents and students, and tourists and newcomers often travel to Harrisonburg because of the amazing food. Aside from food, you will find museums, shops, markets, music venues and much more in Downtown Harrisonburg. </p>
+        </div>  
+    </div>
+    
+    <div class="container">
+     <footer>
+         
+        <div>Email Us: <a href="mailto:tourism@harrisonburgva.gov"><u>tourism@harrisonburgva.gov</u></a></div>
+         
+        <div>Call Us: <u>(540) 432-8935</u></div>
+        
+        <div>Visit Us: <a href="https://www.google.com/maps/place/212+S+Main+St,+Harrisonburg,+VA+22801/@38.4471817,-78.871106,17z/data=!3m1!4b1!4m5!3m4!1s0x89b492cf7166038b:0xb95ba19b67de87db!8m2!3d38.4471817!4d-78.8689173" target="blank"><u>212 S Main St. Harrisonburg, VA 22801</u></a></div>
+         
+    </footer>
+   </div>
+</body>
+</html>

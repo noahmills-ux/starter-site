@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Photos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    
+        <style>
+            * {
+                box-sizing:border-box;
+            }
+            body {
+                margin:0;
+                padding:0;
+            }
+            img {
+                max-width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "header nav nav" 
+                    "footer footer footer";
+            }
+            
+            .container2 {
+                display:grid;
+                grid-template-columns: 2fr 2fr 2fr;
+                grid-template-areas: 
+                    "photos photos photos"
+                    "section1 section2 section3"
+                    "section1-1 section2-2 section3-3"
+            }
+            
+             header {
+                grid-area: header;
+            }
+            
+            nav {
+                grid-area: nav;
+            }
+            
+            .titlesection {
+                grid-area: section;
+            }
+            
+            footer {
+                grid-area: footer; 
+            }
+            
+            .photos {
+                grid-area: photos;
+                background-position: center;
+                background-size: cover;
+                display:grid;
+                justify-items:center;
+                align-items:center;
+                position:relative;
+                background: #333;
+            }
+            
+            .section1 {
+                grid-area: section1;
+            }
+            
+            .section2 {
+                grid-area: section2;
+            }
+            
+            .section3 {
+                grid-area: section3;
+            }
+            
+            .section1-1 {
+                grid-area: section1-1;
+            }
+            
+            .section2-2 {
+                grid-area: section2-2;
+            }
+ 
+             .section3-3 {
+                grid-area: section3-3;
+            }
+            
+            .information {
+                grid-area: information;
+                background-color: #333;
+                color: #fff;
+                align-items: center;
+                justify-items:center;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                font-weight: normal;
+                text-decoration:none;
+                font-style:normal;
+                font-variant: normal;
+                padding: 20px;
+                text-align:inherit;
+            }
+            
+            .infotext {
+                padding-left: 300px;
+                padding-right: 300px;
+                font-size: 25px;
+                font-weight: lighter; 
+            }
+            
+            .smallimg {
+                max-width: 90%;
+                height: auto;
+            }
+            
+            .photos-backbox {
+                color: #fff;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 65px;
+                align-items: center;
+                justify-items:center;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                font-weight: normal;
+                text-decoration:none;
+                font-style:normal;
+                font-variant: normal;
+                text-transform:uppercase;
+                padding: 20px;
+                margin-bottom: 0px;
+                border:5px solid #fff;
+            }
+
+            .section1 {
+                background-color: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff;
+            }
+
+            .section2 {
+                background: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff
+            }
+            
+            .section3 {
+                background: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff
+            }
+
+            .section1-1 {
+                background-color: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff;
+            }
+
+            .section2-2 {
+                background: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff
+            }
+
+            .section3-3 {
+                background: #333;
+                height:auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                align-items: center;
+                justify-items:center;
+                text-align: center;
+                color: #fff
+            }
+            
+        </style>
+    </head>
+<body>
+   <div class="container">
+        <header>
+        <img class="logo" src="images/harrisonburg-logo.png" width="350" height="50" alt="harrisonburg logo">
+        </header>
+
+        <nav>
+            <div><a href="index.html"><h2 class="nav-backbox">Home</h2></a></div>
+            <div><a href="downtown.html"><h2 class="nav-backbox">Downtown</h2></a></div>
+            <div><a href="jmu.html"><h2 class="nav-backbox">JMU</h2></a></div>
+            <div><a href="links.html"><h2 class="nav-backbox">Links</h2></a></div>
+            <div><a href="photos.html"><h2 class="nav-backbox">Photos</h2></a></div>
+        </nav>
+       
+    </div>
+
+    <div class="container2">
+        <div class="photos">
+            <h1 class="photos-backbox">PHOTOS</h1>
+        </div>
+        
+        <div class="section1">
+            <a href="images/blue-ridge.jpg" target="_blank">
+                <img class="smallimg" width="300" src="images/blue-ridge.jpg" alt="Blue Ridge Mountains"></a>
+         <div><p>Blue Ridge Mountains</p></div>
+        </div>
+        
+        <div class="section2">
+            <a href="images/ssc2.jpg" target="_blank">
+                <img class="smallimg" width="300" src="images/ssc2.jpg" alt="Student Success Center"></a>
+         <div><p>JMU Student Success Center</p></div>
+        </div>
+        
+        <div class="section3">
+            <a href="images/church.jpg" target="_blank">
+                <img class="smallimg" width="300" src="images/church.jpg" alt="Downtown Church"></a>
+         <div><p>Downtown Church</p></div>
+        </div>
+        
+        <div class="section1-1">
+            <a href="images/library.jpg" target="_blank">
+                <img class="smallimg" width="300" src="images/library.jpg" alt="Harrisonburg Public Library"></a>
+         <div><p>Public Library</p></div>
+        </div>
+        
+        <div class="section2-2">
+            <a href="images/glass-display.jpg" target="_blank">
+                <img class="smallimg" width="300" src="images/glass-display.jpg" alt="Glass Display At Marketplace"></a>
+         <div><p>Glass Display</p></div>
+        </div>
+        
+        <div class="section3-3">
+            <a href="images/jmu-seal.jpg" target="_blank">
+                <img class="smallimg" width="300" src="images/jmu-seal.jpg" alt="JMU Alma Mater"></a>
+         <div><p>JMU Alma Mater</p></div>
+        </div>
+            
+    </div>
+        
+    
+    <div class="container">
+     <footer>
+         
+        <div>Email Us: <a href="mailto:tourism@harrisonburgva.gov"><u>tourism@harrisonburgva.gov</u></a></div>
+         
+        <div>Call Us: <u>(540) 432-8935</u></div>
+        
+        <div>Visit Us: <a href="https://www.google.com/maps/place/212+S+Main+St,+Harrisonburg,+VA+22801/@38.4471817,-78.871106,17z/data=!3m1!4b1!4m5!3m4!1s0x89b492cf7166038b:0xb95ba19b67de87db!8m2!3d38.4471817!4d-78.8689173" target="blank"><u>212 S Main St. Harrisonburg, VA 22801</u></a></div>
+         
+    </footer>
+   </div>
+</body>
+</html>

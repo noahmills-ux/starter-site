@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Links</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    
+        <style>
+            * {
+                box-sizing:border-box;
+            }
+            body {
+                margin:0;
+                padding:0;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "header nav nav" 
+                    "footer footer footer";
+            }
+            
+            .container2 {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "links links links links"
+                    "link1 link2 link3 link4" 
+                    "link5 link6 link7 link8"
+                    "information information information information";
+            }
+            
+            .container2 {
+                padding: 20px;
+                background: #333;
+            }
+            
+            header {
+                grid-area: header;
+            }
+            nav {
+                grid-area: nav;
+            }
+            
+            .links {
+                grid-area: links;
+                background-position: center;
+                background-size: cover;
+                display:grid;
+                justify-items:center;
+                align-items:center;
+                position:relative;
+                background: #333;
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+            
+            .links-backbox {
+                color: #fff;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 65px;
+                align-items: center;
+                justify-items:center;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                font-weight: normal;
+                text-decoration:none;
+                font-style:normal;
+                font-variant: normal;
+                text-transform:uppercase;
+                padding-right: 40px;
+                padding-left: 40px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 50px;
+                margin-top: 30px;
+                border:5px solid #fff;
+            }
+            
+            .link1 {
+                grid-area: link1;
+                padding: 20px;
+                padding-left: 0px;
+                align-items: center;
+                justify-items:center;
+                display: grid;
+                background: #555;
+            }
+            
+            .link2 {
+                grid-area: link2;
+                padding: 20px;
+                padding-top: 30px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+            }
+            
+            .link3 {
+                grid-area: link3;
+                padding: 20px;
+                padding-top: 0px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+            }
+            
+            .link4 {
+                grid-area: link4;
+                padding: 20px; 
+                padding-top: 30px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+            }
+            
+             .link5 {
+                grid-area: link5;
+                padding: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+                display: grid;
+            }   
+            
+             .link6 {
+                grid-area: link6;
+                padding: 20px; 
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+                 
+            }
+            
+             .link7 {
+                grid-area: link7;
+                padding: 20px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+            }   
+            
+             .link8 {
+                grid-area: link8;
+                padding: 20px;
+                padding-bottom: 0px;
+                align-items: center;
+                justify-items:center;
+                background: #555;
+            } 
+            
+            .information {
+                grid-area: information;
+                background-color: #333;
+                color: #fff;
+                align-items: center;
+                justify-items:center;
+                letter-spacing: 3px;
+                word-spacing: 2px;
+                font-weight: normal;
+                text-decoration:none;
+                font-style:normal;
+                font-variant: normal;
+                padding: 20px;
+                text-align:center;
+            }
+            
+            .infotext {
+                padding-left: 300px;
+                padding-right: 300px;
+                font-size: 25px;
+                font-weight: lighter; 
+            }
+            
+            footer {
+                grid-area:footer;
+            }
+            
+        </style>
+    </head>
+<body>
+   <div class="container">
+        <header>
+        <img class="logo" src="images/harrisonburg-logo.png" width="350" height="50" alt="harrisonburg logo">
+        </header>
+
+        <nav>
+            <div><a href="index.html"><h2 class="nav-backbox">Home</h2></a></div>
+            <div><a href="downtown.html"><h2 class="nav-backbox">Downtown</h2></a></div>
+            <div><a href="jmu.html"><h2 class="nav-backbox">JMU</h2></a></div>
+            <div><a href="links.html"><h2 class="nav-backbox">Links</h2></a></div>
+            <div><a href="photos.html"><h2 class="nav-backbox">Photos</h2></a></div>
+        </nav>
+       
+    </div> 
+    
+    <div class="container2">
+        
+         <div class="links">
+            <h1 class="links-backbox">Links</h1>
+        </div>
+        
+        <div class="link1">
+            <a href="https://www.jmu.edu/" target="_blank" rel="noopener noreferrer">
+            <img alt="JMU-LOGO" src="images/links/jmu-logo.png" width="200" height="100">
+                
+            </a> 
+        </div>
+        
+         <div class="link2">
+            <a href="https://downtownharrisonburg.org/" target="_blank" rel="noopener noreferrer">
+            <img alt="JMU-LOGO" src="images/links/downtown-logo.png.png" width="300" height="50">
+            </a> 
+        </div>  
+        
+        <div class="link3">
+            <a href="https://clementinecafe.com/" target="_blank" rel="noopener noreferrer" >
+            <img alt="JMU-LOGO" src="images/links/clementine-logo.png" width="300" height="100">
+            </a> 
+        </div>   
+        
+        <div class="link4">
+            <a href="https://www.massresort.com/" target="_blank" rel="noopener noreferrer" >
+            <img alt="JMU-LOGO" src="images/links/massanutten-logo.png" width="300" height="100">
+            </a> 
+        </div>    
+    
+        <div class="link5">
+            <a href="https://urecregister.jmu.edu/" target="_blank" rel="noopener noreferrer">
+            <img alt="JMU-LOGO" src="images/links/urec-logo.png" width="200" height="100">
+            </a> 
+        </div> 
+        
+        <div class="link6">
+            <a href="https://www.visitharrisonburgva.com/" target="_blank" rel="noopener noreferrer">
+            <img alt="JMU-LOGO" src="images/links/logo.png" width="300" height="100">
+            </a> 
+        </div>        
+        
+        <div class="link7">
+            <a href="https://www.iexploremore.com/" target="_blank" rel="noopener noreferrer">
+            <img alt="JMU-LOGO" src="images/links/museum-logo.png" width="300" height="100">
+            </a> 
+        </div>
+        
+        <div class="link8">
+            <a href="https://www.billyjacksshack.com/" target="_blank" rel="noopener noreferrer">
+            <img alt="JMU-LOGO" src="images/links/billy-jacks.png" width="300" height="100">
+            </a> 
+        </div>        
+        
+            <div class="information">
+            <p class="infotext">These links will take you to sites related to Downtown Harrisonburg and JMU. </p>
+        </div>  
+     </div>
+    
+    <div class="container">
+     <footer>
+         
+        <div>Email Us: <a href="mailto:tourism@harrisonburgva.gov"><u>tourism@harrisonburgva.gov</u></a></div>
+         
+        <div>Call Us: <u>(540) 432-8935</u></div>
+        
+        <div>Visit Us: <a href="https://www.google.com/maps/place/212+S+Main+St,+Harrisonburg,+VA+22801/@38.4471817,-78.871106,17z/data=!3m1!4b1!4m5!3m4!1s0x89b492cf7166038b:0xb95ba19b67de87db!8m2!3d38.4471817!4d-78.8689173" target="blank"><u>212 S Main St. Harrisonburg, VA 22801</u></a></div>
+         
+    </footer>
+   </div>
+</body>
+</html>
